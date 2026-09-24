@@ -1,0 +1,64 @@
+{
+  "description": "Quiet tmux status notifications for Codex agents",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.tmux/plugins/codex-tmux-notify/scripts/codex_tmux_notify.py",
+            "async": true,
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.tmux/plugins/codex-tmux-notify/scripts/codex_tmux_notify.py",
+            "async": true,
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "Interrupt": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.tmux/plugins/codex-tmux-notify/scripts/codex_tmux_notify.py",
+            "async": true,
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.tmux/plugins/codex-tmux-notify/scripts/codex_tmux_notify.py",
+            "async": true,
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.tmux/plugins/codex-tmux-notify/scripts/codex_tmux_notify.py",
+            "timeout": 3
+          }
+        ]
+      }
+    ]
+  }
+}
