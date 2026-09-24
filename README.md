@@ -39,3 +39,4 @@ If `~/.codex/hooks.json` already exists, merge the provided event entries into i
 - `SessionEnd` clears the ending session's marker.
 - Notifications are suppressed if that agent's tmux window is active when the event occurs.
 - Switching to a marked window clears all pending markers in that window.
+- <img width="316" height="143" alt="Screenshot 2026-09-24 135434" src="https://github.com/user-attachments/assets/59f24e28-0e3c-4236-889e-7f1d35986c25" />
